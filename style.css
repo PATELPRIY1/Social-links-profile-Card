@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-dark-grey: hsl(0, 0%, 20%);
+  --clr-darker-grey: hsl(0, 0%, 12%);
+  --clr-darkest-grey: hsl(0, 0%, 8%);
+
+  --clr-font: "Inter", sans-serif;
+}
+
+body {
+  background: var(--clr-darkest-grey);
+  font-family: var(--clr-font);
+  color: var(--clr-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  gap: 2em;
+}
+
+a{
+  text-decoration: none;
+}
+
+.card {
+  width: 100%;
+  border-radius: 1.25em;
+  background: var(--clr-darker-grey);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5em;
+  padding: 2em 3em;
+}
+
+.card img {
+  width: 6em;
+  height: 6em;
+  border-radius: 3em;
+}
+
+.personal-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.25em;
+}
+
+.personal-info h2 {
+  font-size: 1.69rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.personal-info p {
+  font-size: 0.875em;
+  font-weight: 600;
+  color: var(--clr-green);
+}
+
+.card p {
+  font-size: 0.875em;
+  font-weight: 400;
+  text-align: center;
+}
+
+.social-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2em;
+}
+
+.social-link{
+  text-align: center;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--clr-white);
+  padding: 1em 6.5em;
+  background: var(--clr-dark-grey);
+  border-radius: 0.625em;
+  transition: all 0.5s cubic-bezier(0.54,-0.07, 0.56, 1.13);
+}
+
+.social-link:hover{
+  background: var(--clr-green);
+  color: var(--clr-darker-grey);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
